@@ -9,7 +9,6 @@ body {
     margin: 0 auto;
     position: relative;
     background: url("../img/bg.png") no-repeat center;
-    border: 2px solid black;
 }
 .game :nth-child(2) {
     font: 700 20px/30px simsun;
