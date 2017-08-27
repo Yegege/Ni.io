@@ -1,0 +1,30 @@
+body {
+    margin: 0;
+    padding: 5px 0 0 0 ;
+    width: 100%;
+    background-color: black;
+}
+.game {
+    width: 800px;
+    margin: 0 auto;
+    position: relative;
+    background: url("../img/bg.png") no-repeat center;
+    border: 2px solid black;
+}
+.game :nth-child(2) {
+    font: 700 20px/30px simsun;
+    position: absolute;
+    top: 400px;
+    left: 400px;
+    margin-left: -30px;
+}
+.game :nth-child(3) {
+    font: 900 30px/40px simsun;
+    position: absolute;
+    top: 50px;
+    right: 80px;
+
+}
+.cutton {
+    display: none;
+}
