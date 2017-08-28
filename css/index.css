@@ -11,6 +11,7 @@ body {
     margin: 0 auto;
     position: relative;
     background: url("../img/bg.png") no-repeat center;
+    overflow: hidden;
 }
 .game :nth-child(3) {
     font: 900 30px/40px simsun;
