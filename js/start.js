@@ -29,6 +29,7 @@ start = function (  ) {
         game.addListener( function ( ) {
             clearInterval( timer );
             clearInterval( timee);
+            clearInterval( time )
             gameOver.draw();
         });
         var timer = setInterval( function ( ) {
