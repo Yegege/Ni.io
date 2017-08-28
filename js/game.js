@@ -1,10 +1,11 @@
 ( function ( w ) {
-    function  Game ( ctx, imgObj ) {
+    function  Game ( ctx, imgObj, again ) {
         this.ctx = ctx;
+        this.again = again;
         this.imgObj  = imgObj;
         this.roles = [];
-        this.ready();
         this.listers = [];
+        this.ready();
     }
     Game.prototype = {
         constructor: Game,
@@ -46,7 +47,9 @@
             if ( this.ctx.isPointInPath( birdCoreX, birdCoreY ) ||
                     birdCoreY <= 0  || birdCoreY > this.ctx.canvas.height - this.imgObj.land.height
             ) {
-
+                this.again.style.display = 'block';
+                bird.y = 20;
+                bird.speed = 4;
                 this.birdOver();
             }
             else{
@@ -54,7 +57,7 @@
             }
         },
     };
-    w.getGame = function ( ctx, imgObj ) {
-        return new Game( ctx, imgObj )
+    w.getGame = function ( ctx, imgObj, again ) {
+        return new Game( ctx, imgObj, again )
     }
 } ( window) );

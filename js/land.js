@@ -9,6 +9,7 @@
         this.width = this.img.width;
         this.height = this.img.height;
         Land.len++;
+        Land.len = Land.len >=5? 1 :Land.len;
         this.x = this.width * ( Land.len - 1 );
         this.y = this.ctx.canvas.height - this.img.height;
     }

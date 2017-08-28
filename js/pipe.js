@@ -13,6 +13,7 @@
         this.width = this.imgDown.width;
         this.minHeight = 100;
         Pipe.len++;
+        Pipe.len =  Pipe.len >=7 ? 1:Pipe.len;
         this.x = 350 + this.width * ( Pipe.len - 1 ) * 3 ;
         this._init();
     }

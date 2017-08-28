@@ -8,8 +8,9 @@
 <body>
     <div class="game">
         <canvas id="cvs"  width="800" height="600"></canvas>
-        <p id="sta"> 开始游戏 </p>
+        <button id="sta"> 开始游戏 </button>
         <span id="fen">得分: 0</span>
+        <button id="again"> 再玩一次 </button>
     </div>
 
     <script src="./js/loading.js"> </script>
@@ -20,15 +21,21 @@
     <script src="js/game.js"> </script>
     <script src="js/gameOver.js"></script>
     <script src="js/start.js"></script>
+
     <script>
         var cvs = document.querySelector( "#cvs" );
         var sta = document.querySelector( '#sta');
         var ctx = cvs.getContext( '2d' );
-        var cxks = document.querySelector('#cxks');
+        var again = document.querySelector('#again');
         sta.addEventListener( 'click', function () {
-            sta.className = 'cutton';
+            sta.style.display = 'none';
             start();
         } );
+
+        again.addEventListener( 'click', function () {
+            start();
+            again.style.display =  'none';
+        })
     </script>
 </body>
 </html>

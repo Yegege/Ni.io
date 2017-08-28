@@ -8,6 +8,7 @@
         this.speed = speed;
         this.width = this.img.width;
         Sky.len++;
+        Sky.len = Sky.len>= 3 ? 1: Sky.len;
         this.x = this.width * ( Sky.len - 1 );
         this.y = 0;
     }

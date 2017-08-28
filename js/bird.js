@@ -15,6 +15,7 @@
         this.height = this.img.height / this.nHeight;
         this.speedA = 0.7;
         this._bird();
+
     }
     Bird.prototype = {
         constructor: Bird,
@@ -39,8 +40,7 @@
         _bird : function ( ) {
             var self = this;
             this.ctx.canvas.addEventListener( 'click', function () {
-                self.speed += -20;
-
+                self.speed += -21;
             })
         }
     };

@@ -2,6 +2,7 @@
  * Created by 大妹子 on 2017/8/26.
  */
 load =  {
+
     loadImg : function ( imgUrl, fn ) {
         var imgObj = {};
         var tempImg;
@@ -15,7 +16,7 @@ load =  {
                 if( loaded >= length ) {
                     fn( imgObj );
                 }
-            }
+            };
             tempImg.src  = imgUrl[key];
             imgObj[key] = tempImg
         }

@@ -1,6 +1,7 @@
 (function (w) {
     function  GameOver ( ctx ) {
         this.ctx = ctx;
+
     }
     GameOver.prototype = {
         draw :  function ( ) {
@@ -16,7 +17,7 @@
             }
         };
 
-    w.getGameOver = function (ctx) {
+    w.getGameOver = function (ctx ) {
         return new GameOver( ctx );
     }
 } ( window ));
